@@ -32,3 +32,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
   typeWriter();
 });
+
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    items: 4, // Số lượng item hiển thị cùng lúc
+    loop: true, // Quay lại vòng
+    margin: 10, // Khoảng cách giữa các item
+    nav: true, // Hiển thị nút điều hướng
+    autoplay: true, // Tự động phát
+    autoplayTimeout: 3000, // Thay đổi hình ảnh sau mỗi 3 giây
+    autoplayHoverPause: true, // Tạm dừng autoplay khi hover
+    dots: false,
+    responsive: {
+      0: {
+        items: 1, // Hiển thị 1 item trên màn hình rất nhỏ (di động)
+      },
+      600: {
+        items: 2, // Hiển thị 2 item trên màn hình nhỏ (tablet)
+      },
+      1000: {
+        items: 4, // Hiển thị 4 item trên màn hình lớn (máy tính để bàn)
+      },
+    },
+  });
+});
