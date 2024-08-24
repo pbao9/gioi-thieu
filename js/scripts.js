@@ -38,7 +38,7 @@ $(document).ready(function () {
     items: 4, // Số lượng item hiển thị cùng lúc
     loop: true, // Quay lại vòng
     margin: 10, // Khoảng cách giữa các item
-    nav: true, // Hiển thị nút điều hướng
+    nav: false, // Hiển thị nút điều hướng
     autoplay: true, // Tự động phát
     autoplayTimeout: 3000, // Thay đổi hình ảnh sau mỗi 3 giây
     autoplayHoverPause: true, // Tạm dừng autoplay khi hover
@@ -51,7 +51,7 @@ $(document).ready(function () {
         items: 2, // Hiển thị 2 item trên màn hình nhỏ (tablet)
       },
       1000: {
-        items: 4, // Hiển thị 4 item trên màn hình lớn (máy tính để bàn)
+        items: 3, // Hiển thị 4 item trên màn hình lớn (máy tính để bàn)
       },
     },
   });
