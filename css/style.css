@@ -113,3 +113,27 @@ body {
 }
 
 /* Font */
+
+
+#typingEffect {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 24px;
+    height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    width: fit-content;
+    animation: caret 0.5s steps(1) infinite;
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
